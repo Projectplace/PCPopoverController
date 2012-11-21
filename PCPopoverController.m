@@ -13,6 +13,7 @@ CGFloat const contentInset = 6.0;
 CGFloat const capInset = 20.0;
 CGFloat const arrowHeight = 15.0;
 CGFloat const arrowBase = 24.0;
+CGFloat const sideMargin = 4.0;
 
 @interface PCPopoverControllerBackgroundView : UIPopoverBackgroundView
 {
@@ -99,7 +100,7 @@ static UIColor *currentTintColor;
 #pragma mark - Class Handlers
 + (UIEdgeInsets)contentViewInsets
 {
-    return UIEdgeInsetsMake(contentInset, contentInset, contentInset, contentInset);
+    return UIEdgeInsetsMake(contentInset, contentInset+sideMargin, contentInset, contentInset+sideMargin);
 }
 
 + (CGFloat)arrowHeight
