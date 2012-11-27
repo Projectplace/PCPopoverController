@@ -167,6 +167,8 @@ static UIColor *currentTintColor;
             rotation = CGAffineTransformMakeRotation(M_PI_2);
             break;
         }
+		default:
+			break;
     }
     
     borderImageView.frame = CGRectMake(left, top, width, height);
